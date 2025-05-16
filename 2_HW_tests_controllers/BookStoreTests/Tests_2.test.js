@@ -1,14 +1,14 @@
 const axios = require('axios').default;
-const CreateUser = require('./2_HW_tests_controllers/CreateUser.js')
+
 //1 
 
 test('POST /Account/v1/User - Creating a new user', async () => {
-	// const newUser = {
-	//   password: 'Qwerty123!l',
-	//   userName: `lenalemo_${Date.now()}`
-	// };
+	const newUser = {
+	  password: 'Qwerty123!l',
+	  userName: `lenalemo_${Date.now()}`
+	};
   
-	// const response = await CreateUser.newUser
+	const response = await axios.post('https://bookstore.toolsqa.com/Account/v1/User', newUser);
 	const userID = response.data.userID;
 	const userName = response.data.username
 	expect(response.status).toBe(201);
@@ -17,7 +17,7 @@ test('POST /Account/v1/User - Creating a new user', async () => {
 	expect(response.data).toHaveProperty('username');
 	console.log(userName);
 	console.log(userID);
-  
+  });
 
 
 //2
@@ -141,9 +141,3 @@ test('DELETE /BookStore/v1/Book - Removing my book', async () => {
 	expect(response.status).toBe(204); 
 	console.log('The book was successfully removed:',response.status);
 });
-
-
-
-
-
-}
