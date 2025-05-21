@@ -1,6 +1,6 @@
-const FirstUser = require('./createUser_1');
-const AccLogin = require('./authorized_2');
-const BooksActivities = require('./bookcontroller_3');
+const FirstUser = require('./User');
+const AccLogin = require('./AccountAuthorization');
+const BooksActivities = require('./BookController');
 
 
 let token;

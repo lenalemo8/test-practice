@@ -1,4 +1,4 @@
-const { BaseController } = require("./basecontroller_0");
+const { BaseController } = require("./BaseController");
 
 class AlbumController extends BaseController {
 	

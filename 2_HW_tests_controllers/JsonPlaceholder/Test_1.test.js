@@ -1,9 +1,9 @@
 
-const FirstUser = require('./getUser_1.js');
-const FirstComment = require('./createComment_2.js');
-const CheckTodos = require('./getTodos_3.js');
-const FirstPost = require('./createPost_4.js');
-const GetAlbumsByID = require('./filterAlbums_5.js');
+const FirstUser = require('./UserController.js');
+const FirstComment = require('./CommentController.js');
+const CheckTodos = require('./Todos.js');
+const FirstPost = require('./CreatePost.js');
+const GetAlbumsByID = require('./AlbumController.js');
 
 //1
 

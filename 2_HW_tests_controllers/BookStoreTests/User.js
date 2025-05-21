@@ -1,4 +1,4 @@
-const { BaseService } = require('./base_0.js');
+const { BaseService } = require('./BaseService.js');
 
 class User extends BaseService {
     generateUserData () {
